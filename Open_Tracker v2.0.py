@@ -1130,17 +1130,6 @@ class MainWindow(QMainWindow):
                 painter.drawLine(16, 3, 16, 29)
                 painter.drawLine(3, 16, 29, 16)
                 painter.drawEllipse(QPointF(16, 16), 4.0, 4.0)
-            elif icon_type == "language":
-                # 字形均用线段绘制，与其他工具图标同色、同线宽，不依赖中文字体。
-                painter.drawLine(10, 3, 11, 5)
-                painter.drawLine(3, 8, 19, 8)
-                painter.drawPolyline(QPolygonF([QPointF(16, 10), QPointF(13, 15),
-                                              QPointF(9, 19), QPointF(3, 23)]))
-                painter.drawPolyline(QPolygonF([QPointF(6, 10), QPointF(9, 15),
-                                              QPointF(13, 19), QPointF(18, 23)]))
-                painter.drawPolyline(QPolygonF([QPointF(19, 29), QPointF(24, 15),
-                                              QPointF(29, 29)]))
-                painter.drawLine(21, 24, 27, 24)
             elif icon_type == "undo":
                 painter.drawArc(QRectF(7, 8, 20, 18), 25 * 16, 245 * 16)
                 painter.setBrush(color)
@@ -1243,7 +1232,7 @@ class MainWindow(QMainWindow):
         self.act_quality.setEnabled(False)
         self.act_theme = QAction(ui('浅色界面'), self)
         self.act_theme.triggered.connect(self.toggle_theme)
-        self.act_language = QAction(self._custom_icon('language'), ui('English'), self)
+        self.act_language = QAction(ui('English'), self)
         self.act_language.triggered.connect(self.toggle_language)
         self.act_exit = QAction(ui("退出"), self)
         self.act_exit.setShortcut(QKeySequence.StandardKey.Quit)
@@ -3251,8 +3240,7 @@ class MainWindow(QMainWindow):
                 (self.act_calib, 'calib'), (self.act_coord, 'origin'), (self.act_aux_line, 'aux'),
                 (self.act_measure, 'measure'), (self.act_mark, 'mark'),
                 (self.act_import, 'import'), (self.act_export, 'export'),
-                (self.act_export_frame, 'frame'), (self.act_reset_view, 'reset'),
-                (self.act_language, 'language')):
+                (self.act_export_frame, 'frame'), (self.act_reset_view, 'reset')):
             action.setIcon(self._custom_icon(icon))
         self.btn_cursor.setIcon(self._custom_icon('cursor'))
         self.btn_trail.setIcon(self._custom_icon('trail'))
