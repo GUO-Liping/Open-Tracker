@@ -18,10 +18,6 @@ The platform provides an end-to-end experimental kinematics workflow, featuring 
 
 <img src="image/GUI_image2.png" alt="软件界面" width="900">
 
-![软件主界面](./image/GUI_image1.png)
-
-![软件测量界面](./image/GUI_image2.png)
-
 ### License
 
 This project is licensed under the [MIT License].
