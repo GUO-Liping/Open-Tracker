@@ -14,9 +14,9 @@ The platform provides an end-to-end experimental kinematics workflow, featuring 
 
 软件集成了完整的实验力学数据提取工作流，支持两点真实物理尺度定标、任意倾角的旋转坐标系投影，以及基于射影几何交比定理的透视辅助网格与智能磁吸。它不仅具备帧精确的多目标逐帧数字化捕捉与双向联动的 PyQtGraph 动态位移时程绘制能力，还内置了逐步骤撤回/重做机制，能自动微分计算分向位移、速度与真实合速度，并一键双向交互包含完整实验元数据的结构化 Excel 分析报告。
 
-<img src="image/GUI_image1.png" alt="中文界面" width="900">
+<img src="images/GUI_image1.png" alt="中文界面" width="900">
 
-<img src="image/GUI_image2.png" alt="English GUI" width="900">
+<img src="images/GUI_image2.png" alt="English GUI" width="900">
 
 ### License
 
