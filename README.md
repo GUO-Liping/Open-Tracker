@@ -1,4 +1,4 @@
-# Open Tracker V1.0
+# Open Tracker updating...
 
 [English](https://www.google.com/search?q=%23english&utm_source=gemini) | [简体中文](https://www.google.com/search?q=%23%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87&utm_source=gemini)
 
