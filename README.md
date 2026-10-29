@@ -4,7 +4,7 @@
 
 ### English
 
-**Open Tracker** is an open-source motion analysis tool implemented in **PyQt6**, **OpenCV**, and **PyQtGraph**, engineered specifically for analyzing massive, high-speed experimental video sequences. By leveraging a dedicated asynchronous `QThread` decoding pipeline with lookahead ring-buffering, it completely eliminates UI latency during playback, rapid keyframe seeking, and dynamic image adjustments.
+**Open Tracker** is an open-source motion analysis tool implemented in **PyQt**, **OpenCV**, and **PyQtGraph**, engineered specifically for analyzing massive, high-speed experimental video sequences. By leveraging a dedicated asynchronous `QThread` decoding pipeline with lookahead ring-buffering, it completely eliminates UI latency during playback, rapid keyframe seeking, and dynamic image adjustments.
 
 The platform provides an end-to-end experimental kinematics workflow, featuring two-point physical scale calibration, arbitrary rotated coordinate frames, and cross-ratio projective perspective grids with automatic magnetic snapping. It supports frame-accurate multi-point digitization alongside real-time, interactive displacement time-history plotting, transaction-level undo/redo rollbacks, and automated differential kinematic reporting (component displacements, velocities, and true resultant magnitudes) directly exportable to multi-sheet Excel workbooks.
 
